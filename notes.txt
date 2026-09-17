@@ -78,3 +78,61 @@
       exit()
 
 ================================================================================
+
+
+
+================================================================================
+                           PYTHON: CORE OVERVIEW
+================================================================================
+
+--------------------------------------------------------------------------------
+1. WHAT IS PYTHON?
+--------------------------------------------------------------------------------
+
+* DEFINITION: A high-level, general-purpose programming language created by 
+  Guido van Rossum and released in 1991.
+* CORE DOMAINS:
+  - Web Development (Server-side)
+  - Software Development
+  - Mathematics & Data Processing
+  - System Automation & Scripting
+
+
+--------------------------------------------------------------------------------
+2. KEY CAPABILITIES
+--------------------------------------------------------------------------------
+
+* WEB & WORKFLOWS: Builds server-side applications and automates software pipelines.
+* DATA & FILES: Connects to databases, reads/modifies file systems, handles big 
+  data, and performs complex mathematical computations.
+* DEVELOPMENT SPEED: Ideal for rapid prototyping as well as building 
+  production-ready software systems.
+
+
+--------------------------------------------------------------------------------
+3. WHY USE PYTHON?
+--------------------------------------------------------------------------------
+
+* CROSS-PLATFORM: Runs natively on macOS, Windows, Linux, Raspberry Pi, etc.
+* READABLE SYNTAX: Clean, English-like syntax that requires significantly fewer 
+  lines of code than low-level languages.
+* INTERPRETED EXECUTION: Runs code instantly line-by-line via an interpreter, 
+  enabling real-time testing and fast prototyping.
+* MULTI-PARADIGM: Supports Procedural, Object-Oriented (OOP), and Functional 
+  programming styles.
+
+
+--------------------------------------------------------------------------------
+4. ADDITIONAL UNDER-THE-HOOD INSIGHTS (SYSTEM PERSPECTIVE)
+--------------------------------------------------------------------------------
+
+* DYNAMIC TYPING: Variable types are resolved at runtime in Heap memory, meaning 
+  variables hold references to typed objects rather than fixed raw values.
+* AUTOMATIC MEMORY MANAGEMENT: Uses reference counting paired with a cyclic 
+  Garbage Collector to allocate and free RAM automatically without manual code.
+* CPYTHON FOUNDATION: The standard engine is written in C, translating Python 
+  bytecode into pre-compiled C routines that execute raw hardware binary (0s/1s).
+* MASSIVE ECOSYSTEM: Supported by a huge repository of third-party libraries 
+  (PyPI) managed seamlessly through isolated virtual environments (`venv`).
+
+================================================================================
