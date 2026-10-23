@@ -1,0 +1,154 @@
+1.Python Indentation
+Indentation refers to the spaces at the beginning of a code line.
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+Python uses indentation to indicate a block of code.
+example (correct)
+[
+if 5 > 2:
+      print("Five is greater than two!")
+]
+example(incorrect)
+[
+if 5 > 2:
+print("Five is greater than two!")
+]
+
+2.Print Without a New Line
+By default, the print() function ends with a new line.
+If you want to print multiple words on the same line, you can use the (end) parameter:
+like this print("Hello Humans", end=" ")
+
+3.You can combine text and numbers in one output by separating them with a comma:
+
+4.print("I am", 18, "years old")
+Think of the print() command as a stamping machine."Every time I finish stamping one item and move to the next, I will automatically stamp a single space in between them."
+It prints I am.
+
+It sees another item is coming, so it adds a space.
+
+It prints 18.
+
+It sees another item is coming, so it adds a space.
+
+It prints years old.
+
+if you want NO spaces at all use (sep=""): print("I am", 18, "years old", sep="")
+
+5.# is used to add comments
+#This is a comment
+print("Hello, World!")
+
+6.Python has no command for declaring a variable.
+A variable is created the moment you first assign a value to it.
+Variables do not need to be declared with any particular type, and can even change type after they have been set.
+Example
+x = 4 # x is of type int
+x = "Sally" # x is now of type str
+print(x)
+
+- If you want to specify the data type of a variable, this can be done with casting.
+  x = str(3)
+  y = int(3)
+  z = float(3)
+- You can get the data type of a variable with the type() function.
+  x = 5
+  y = "John"
+  print(type(x))
+  print(type(y))
+- String variables can be declared either by using single or double quotes:
+
+
+
+7.Rules for Python variables:
+A variable name must start with a letter or the underscore character
+A variable name cannot start with a number
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable names are case-sensitive (age, Age and AGE are three different variables)
+A variable name cannot be any of the Python keywords.
+- Camel Case : Each word, except the first, starts with a capital letter:
+myVariableName = "John"
+- Pascal Case : Each word starts with a capital letter:
+MyVariableName = "John"
+- Snake Case : Each word is separated by an underscore character:
+my_variable_name = "John"
+
+
+8.We can also declare variables like this in Python:
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+
+9.In the print() function, you output multiple variables, separated by a comma:
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z).       or
+You can also use the + operator to output multiple variables but without space:
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
+
+
+10.For numbers, the + character works as a mathematical operator:
+x = 5
+y = 10
+print(x + y).#ans is 15
+
+11.In the print() function, when you try to combine a string and a number with the + operator, Python will give you an [ERROR].
+x,y="ayaan",54
+print(x+y)#ERROR.       rather use 
+print(x,y)#perfect
+
+
+12.Global Variable: Created outside of any function. Anyone, anywhere in your code, can see and use it.
+Local Variable: Created inside a specific function. Only that specific function can see and use it.
+- inshort any thing between below is local and cannot be accessed outside and anything outside is global variable
+def custom_name()
+
+custom_name()
+
+"use the global keyword if you want to change a global variable inside a function."
+example
+x = "awesome"
+def myfunc():
+  global x
+  x = "fantastic"
+myfunc()
+print("Python is " + x).  #ans is Pyhton is fantastic
+
+
+14.Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+None Type:	NoneType
+
+15.Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+- Float, or "floating point number" is a number, positive or negative, containing one or more decimals.Float can also be scientific numbers with an "e" to indicate the power of 10.
+- Complex numbers are written with a "j" as the imaginary part:
+- one type can be converted to another type using type conversion
+example
+a=1
+a=float(3.4)
+
+
+16.Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers:
+example:
+import random
+print(random.randrange(1, 10))
+
+
+
+17."Strings are Arrays" simply means nstead of treating "Hello" as one big indivisible blob, Python treats it like a row of boxes, where each box holds one character.Because characters are stored in order, you can grab any individual character using square brackets [] and its position number (index).n languages like C++ or Java, a single letter (like 'A') is a special data type called a char.
+Python keeps things simple: it doesn't have a char type. A single letter is just a string with a length of 1.Even though you can look at any character using its index, Python does not allow you to change a character directly inside an existing string.
+
+18.To get the length of a string, use the len() function.
+To check if a certain phrase or character is present in a string, we can use the keyword in.
+To check if a certain phrase or character is NOT present in a string, we can use the keyword not in.
